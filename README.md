@@ -1,68 +1,75 @@
-# Zomato
+# Zomato Clone
 
-## Description
-Zomato is a food delivery and restaurant discovery web application built using React. This project enables users to browse restaurants, view menus and ratings, and place online food orders seamlessly. The application follows modern UI/UX principles to ensure a user-friendly experience.
-
----
-
-## Project Structure
-```
-src/
-│-- App.jsx          # Main application component
-│-- main.jsx         # Entry point of the application
-│-- index.css        # Global styles
-│-- Assets/          # Images and static assets
-│-- components/      # Reusable UI components
-│-- data/            # Mock data and API responses
-│-- pages/           # Page-level components
-│-- styles/          # Additional stylesheets
-```
-
----
-
-## Installation
-
-Follow these steps to set up the project on your local machine:
-
-### **1. Clone the Repository**
-```sh
-git clone https://github.com/TheCoderSaurabh/Zomato-Cloned.git
-```
-
-### **2. Navigate to the Project Directory**
-```sh
-cd zomato
-```
-
-### **3. Install Dependencies**
-```sh
-npm install
-```
-
-### **4. Start the Development Server**
-```sh
-npm run dev
-```
-The application will run at `http://localhost:5173/` (default Vite development server).
-
----
-
-## Technologies Used
-- **React.js** - Frontend framework
-- **Vite** - Fast development server for React
-- **CSS** - Styling for a modern and responsive UI
-- **Node.js & npm** - Dependency management
-
----
+A full-stack web application replicating Zomato's core features, built using Vite, React, and authentication functionalities.
 
 ## Features
-✅ Browse and search for restaurants by name, cuisine, or location  
-✅ View restaurant details, including **menu, ratings, and reviews**  
-✅ Order food online and track delivery status in real-time  
-✅ **User authentication** for personalized recommendations  
-✅ Responsive **mobile-friendly** design  
+
+- User authentication (Signup/Login)
+- Dynamic Navbar (Updates after login)
+- Search and filter restaurants
+- Browse restaurant details
+- Add items to cart and checkout
+- Responsive UI
+
+## Technologies Used
+
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT
+
+## Installation & Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/TheCoderSaurabh/Zomato-Cloned.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd frontend
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open the app in the browser at `http://localhost:5173/`
+
+## Backend Setup
+
+1. Move to the backend directory:
+   ```sh
+   cd backend
+   ```
+2. Install backend dependencies:
+   ```sh
+   npm install
+   ```
+3. Create a `.env` file and add necessary environment variables:
+   ```sh
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+   ```
+4. Start the backend server:
+   ```sh
+   npm run server
+   ```
+
+## Future Enhancements
+
+- Implement payment gateway
+- Add order history and tracking
+- Improve UI/UX
+
+## Contributing
+
+Feel free to contribute by opening issues or submitting pull requests.
+
 
 ---
 
-### 🚀 Happy Coding! 🎉
+Developed by **Saurabh Prasad** 🚀
 
