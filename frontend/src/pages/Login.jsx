@@ -27,7 +27,7 @@ function Login({ setIsAuthenticated }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/user/login",
+        `${import.meta.env.VITE_SERVER_URI}/user/login/`, 
         formData,
         {
           headers: { "Content-Type": "application/json" },
@@ -40,7 +40,7 @@ function Login({ setIsAuthenticated }) {
       navigate("/dashboard");
 
     } catch (error) {
-      console.error("Error Details:", error.response?.data);
+      // console.error("Error Details:", error.response?.data);
 
       if (error.response?.data?.message) {
         if (error.response.status === 404) {

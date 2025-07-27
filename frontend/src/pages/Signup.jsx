@@ -94,7 +94,7 @@ function Signup() {
     alert("Successfully signed up!");
     navigate("/login");
     try {
-      const response = await axios.post('http://localhost:3000/user/signup/', formData, {
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URI}/user/signup/`, formData, {
         headers: { 'Content-Type': 'application/json' },
       });
       console.log('Response:', response.data);

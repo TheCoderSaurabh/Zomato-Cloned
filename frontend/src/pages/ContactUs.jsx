@@ -49,7 +49,7 @@ function ContactUs() {
 
     setFormData({ name: "", eamil: "", message: "" });
     try {
-      const response = await axios.post('http://localhost:3000/api/contact', formData, {
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URI}/api/contact`, formData, {
         headers: { 'Content-Type': 'application/json' },
       });
       console.log('Response:', response.data);

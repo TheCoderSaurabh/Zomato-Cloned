@@ -27,8 +27,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //body parser file
-// app.use(bodyParser.urlencoded({extended:false}));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 
 app.use('/user', userRoutes);
 // app.use('/api', foodRoutes);
