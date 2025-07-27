@@ -20,7 +20,10 @@ connectionDB();
 
 // cross origin resource sharing
 app.use(cors({
-    origin: ["http://localhost:3000","http://localhost:5173/","https://zomato-cloned-net.netlify.app/"]
+    origin: "https://zomato-cloned-net.netlify.app", // ✅ allow your frontend origin
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+
 }))
 
 // For parsing application/json
