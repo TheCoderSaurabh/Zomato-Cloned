@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config()
 
-import connectionDB from './config/db.js';
+import connectionDB from './db/db.js';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
