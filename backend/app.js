@@ -21,14 +21,26 @@ connectionDB();
 // cross origin resource sharing
 app.use(cors())
 
+// For parsing application/json
+// For parsing application/x-www-form-urlencoded
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 //body parser file
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.use(bodyParser.json());
 
 app.use('/user', userRoutes);
 // app.use('/api', foodRoutes);
 app.use('/api', restroRoutes);
 app.use('/api', contactUs);
 app.use('/api', imageRoute);
+
+app.get('/',(req,res)=>{
+    res.send({
+        activeStatus:true,
+        error:false,
+    })
+})
 
 export default app;
