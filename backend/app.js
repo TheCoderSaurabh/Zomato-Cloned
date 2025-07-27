@@ -19,7 +19,9 @@ const app = express();
 connectionDB();
 
 // cross origin resource sharing
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:3000","http://localhost:5173/","https://zomato-cloned-net.netlify.app/"]
+}))
 
 // For parsing application/json
 // For parsing application/x-www-form-urlencoded
